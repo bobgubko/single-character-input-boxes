@@ -1,23 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import styled from 'styled-components'
-
-const Input = styled.input`
-  justify-content: space-between;
-  width: 45px;
-  height: 45px;
-  margin: 5px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 34px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-    Arial sans-serif;
-`
-
 const InputBox = ({type, handleKeyDown, handleChange, handleFocus, name, inputRef, inputProps}) => {
   return (
-    <Input
+    <input
       {...inputProps}
       type={type}
       onKeyDown={handleKeyDown}
